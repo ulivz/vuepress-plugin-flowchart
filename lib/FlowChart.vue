@@ -118,6 +118,7 @@
   transition all 1s
   & > svg
     max-width 100%
+    height auto
   &.loading
     background-color #f3f6f8
 
