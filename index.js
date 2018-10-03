@@ -3,12 +3,12 @@ const path = require('path')
 module.exports = {
   // component: './flowcharts.vue'
   enhanceAppFiles: [
-    path.resolve(__dirname, 'client.js')
+    path.resolve(__dirname, './lib/client.js')
   ],
 
   chainMarkdown (config) {
     config
       .plugin('flowchart')
-      .use(require('./markdownItPlugin'))
+      .use(require('./lib/markdownItPlugin'))
   }
 }
