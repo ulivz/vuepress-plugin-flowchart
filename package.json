@@ -4,7 +4,7 @@
   "description": "flowchart plugin for vuepress",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs",
+    "dev": "vuepress dev docs --temp .temp",
     "build": "vuepress build docs",
     "release": "release-it"
   },
@@ -29,6 +29,7 @@
   "homepage": "https://github.com/vuejs/vuepress/packages/@vuepress/plugin-flowchart#readme",
   "devDependencies": {
     "vuepress": "^1.0.0-alpha.3",
+    "@vuepress/plugin-pwa": "^1.0.0-alpha.3",
     "release-it": "v7.4.8",
     "conventional-changelog-cli": "^2.0.1"
   }

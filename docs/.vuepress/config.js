@@ -11,5 +11,23 @@ module.exports = {
 
   plugins: [
     require('../../index')
-  ]
+  ],
+
+  themeConfig: {
+    repo: "ulivz/vuepress-plugin-flowchart",
+    editLinks: true,
+    docsDir: 'docs',
+    editLinkText: 'Edit this page on GitHub',
+    lastUpdated: 'Last Updated'
+  },
+
+  plugins: {
+    '@vuepress/pwa': {
+      serviceWorker: true,
+      updatePopup: {
+        message: "New content is available.",
+        buttonText: "Refresh"
+      }
+    }
+  }
 }
