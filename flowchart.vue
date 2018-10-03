@@ -1,7 +1,6 @@
 <template>
   <div class="vue-flowchart">
     <slot class="slot"></slot>
-    <div :id="id"></div>
   </div>
 </template>
 
@@ -11,16 +10,22 @@ export default {
 
   data () {
     return {
-      id: 'v-' + Math.random().toString(16).slice(2)
+      id: null
     }
   },
 
+  created () {
+    this.id = 'v-' + Math.random().toString(16).slice(2)
+  },
+
   mounted () {
-    const code = this.$el.innerText
+    const code = this.$el.innerText.trim()
     this.$el.removeChild(this.$el.childNodes[0])
+    this.$el.setAttribute('id', this.id)
+
     import(/* webpackChunkName: "flowchart" */ 'flowchart.js').then(flowchart => {
-      flowchart = flowchart.default
-      const svg = flowchart.parse(code)
+      const { parse } = flowchart.default
+      const svg = parse(code)
       svg.drawSVG(this.id, {
         'x': 0,
         'y': 0,
