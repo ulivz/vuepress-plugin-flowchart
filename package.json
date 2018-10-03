@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/vuejs/vuepress/packages/@vuepress/plugin-flowchart#readme",
   "devDependencies": {
-    "vuepress": "^1.0.0-alpha.2"
+    "vuepress": "^1.0.0-alpha.3"
   }
 }
