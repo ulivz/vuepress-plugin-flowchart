@@ -6,8 +6,6 @@
 </template>
 
 <script>
-import flowchart from 'flowchart.js'
-
 export default {
   name: 'flowchart',
 
@@ -21,7 +19,6 @@ export default {
     const code = this.$el.innerText
     this.$el.removeChild(this.$el.childNodes[0])
     import(/* webpackChunkName: "flowchart" */ 'flowchart.js').then(flowchart => {
-      console.log(code)
       flowchart = flowchart.default
       const svg = flowchart.parse(code)
       svg.drawSVG(this.id, {
