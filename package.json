@@ -1,10 +1,11 @@
 {
-  "name": "@vuepress/plugin-flowchart",
-  "version": "1.0.0-alpha.2",
+  "name": "vuepress-plugin-flowchart",
+  "version": "1.0.0",
   "description": "flowchart plugin for vuepress",
   "main": "index.js",
-  "publishConfig": {
-    "access": "public"
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/vuejs/vuepress/issues"
   },
-  "homepage": "https://github.com/vuejs/vuepress/packages/@vuepress/plugin-flowchart#readme"
+  "homepage": "https://github.com/vuejs/vuepress/packages/@vuepress/plugin-flowchart#readme",
+  "devDependencies": {
+    "vuepress": "^1.0.0-alpha.2"
+  }
 }
