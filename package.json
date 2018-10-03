@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,8 @@
   },
   "homepage": "https://github.com/vuejs/vuepress/packages/@vuepress/plugin-flowchart#readme",
   "devDependencies": {
-    "vuepress": "^1.0.0-alpha.3"
+    "vuepress": "^1.0.0-alpha.3",
+    "release-it": "v7.4.8",
+    "conventional-changelog-cli": "^2.0.1"
   }
 }
