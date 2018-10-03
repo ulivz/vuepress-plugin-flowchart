@@ -1,28 +1,16 @@
 <template>
-  <div class="vue-flowchart">
-    <slot class="slot"></slot>
-  </div>
+  <div class="vue-flowchart"></div>
 </template>
 
 <script>
 export default {
   name: 'flowchart',
 
-  data () {
-    return {
-      id: null
-    }
-  },
-
-  created () {
-    this.id = 'v-' + Math.random().toString(16).slice(2)
-  },
+  props: ['id', 'code'],
 
   mounted () {
-    const code = this.$el.innerText.trim()
-    this.$el.removeChild(this.$el.childNodes[0])
+    const code = this.code
     this.$el.setAttribute('id', this.id)
-
     import(/* webpackChunkName: "flowchart" */ 'flowchart.js').then(flowchart => {
       const { parse } = flowchart.default
       const svg = parse(code)
@@ -97,6 +85,7 @@ export default {
 .vue-flowchart
   overflow scroll
   text-align center
+  font-size 0px
   & > svg
     max-width 100%
 

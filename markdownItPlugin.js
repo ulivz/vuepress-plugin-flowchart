@@ -1,3 +1,5 @@
+const { hash } = require('@vuepress/shared-utils')
+
 module.exports = function flowchartPlugin (md, options = {}) {
   options = options || {}
 
@@ -8,7 +10,9 @@ module.exports = function flowchartPlugin (md, options = {}) {
 
   function render (tokens, idx, options, env, self) {
     const token = tokens[idx]
-    return `<FlowChart><pre><code>${token.content}</code></pre></FlowChart>`
+    const key = `flowchart_${hash(idx)}`
+    md.$dataBlock[key] = token.content
+    return `<FlowChart id="${key}" :code="$dataBlock.${key}"></FlowChart>`
   }
 
   function uml (state, startLine, endLine, silent) {
