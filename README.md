@@ -12,6 +12,7 @@
 
 - Rapid flowchart development.
 - Content loading.
+- Out-of-the-box styling preset (Currently support `vue`、`ant`).
 
 Check out the full [documentation](https://flowchart.vuepress.ulivz.com/).
 

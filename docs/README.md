@@ -39,14 +39,19 @@ module.exports = {
 ## Syntax
 
 ```markdown
-@flowstart
+@flowstart [preset]
 
 <!-- Your chart code here. -->
 
 @flowend
 ```
 
-`vuepress-plugin-flowchart` leverages [flowchart.js](https://github.com/adrai/flowchart.js) under the hook.
+Available presets for now:
+
+- `vue` (default)
+- `ant`
+
+Feel free to submit your own preset.
 
 ### Start & End
 
@@ -187,7 +192,7 @@ para(path2)->e
 
 ## Showcase
 
-### #1
+### #1 Ordinary process
 
 ```md
 @flowstart
@@ -207,7 +212,7 @@ stage3=>operation: Stage 3
 stage1->stage2->stage3
 @flowend
 
-### #2
+### #2 Complex process
 
 ```md
 @flowstart
@@ -247,10 +252,10 @@ c2(yes)->io->e
 c2(no)->op2->e
 @flowend
 
-### #3
+### #3 ANT Preset
 
 ```markdown
-@flowstart
+@flowstart ant
 st=>start: Start:>http://www.google.com[blank]
 e=>end:>http://www.google.com
 op1=>operation: My Operation
@@ -268,7 +273,7 @@ para(path2, top)->op1
 @flowend
 ```
 
-@flowstart
+@flowstart ant
 st=>start: Start:>http://www.google.com[blank]
 e=>end:>http://www.google.com
 op1=>operation: My Operation

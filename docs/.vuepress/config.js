@@ -9,10 +9,6 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
 
-  plugins: [
-    require('../../index')
-  ],
-
   themeConfig: {
     repo: "ulivz/vuepress-plugin-flowchart",
     editLinks: true,
@@ -21,13 +17,15 @@ module.exports = {
     lastUpdated: 'Last Updated'
   },
 
-  plugins: {
-    '@vuepress/pwa': {
+  plugins: [
+    require('../../index'),
+    [
+      '@vuepress/pwa', {
       serviceWorker: true,
       updatePopup: {
         message: "New content is available.",
         buttonText: "Refresh"
       }
-    }
-  }
+    }]
+  ]
 }
