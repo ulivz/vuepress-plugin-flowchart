@@ -43,17 +43,19 @@ module.exports = {
 ```markdown
 @flowstart [preset]
 
-<!-- Your chart code here. -->
+<!-- Your flowchart code here. -->
 
 @flowend
 ```
+
+`vuepress-plugin-flowchart` leverages [flowchart.js](https://github.com/adrai/flowchart.js) under the hook.
 
 Available presets for now:
 
 - `vue` (default)
 - `ant`
 
-View the current available preset [here](https://github.com/ulivz/vuepress-plugin-flowchart/tree/master/lib/presets), feel free to submit your own preset.
+View the current available preset [here](https://github.com/ulivz/vuepress-plugin-flowchart/tree/master/lib/presets), feel free to submit your own preset. : )
 
 ### Start & End
 
@@ -254,7 +256,7 @@ c2(yes)->io->e
 c2(no)->op2->e
 @flowend
 
-### #3 ANT Preset
+### #3 Ant Preset
 
 ```markdown
 @flowstart ant
