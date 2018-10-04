@@ -75,6 +75,7 @@
   justify-content center
   align-items center
   transition all 1s
+  padding 10px
   & > svg
     max-width 100%
     height auto
