@@ -24,9 +24,9 @@
   "author": "ULIVZ <chl814@foxmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vuejs/vuepress/issues"
+    "url": "https://github.com/ulivz/vuepress-plugin-flowchart"
   },
-  "homepage": "https://github.com/vuejs/vuepress/packages/@vuepress/plugin-flowchart#readme",
+  "homepage": "https://flowchart.vuepress.ulivz.com",
   "devDependencies": {
     "vuepress": "^1.0.0-alpha.3",
     "@vuepress/plugin-pwa": "^1.0.0-alpha.3",
