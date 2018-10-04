@@ -25,6 +25,8 @@ para(path2, top)->op1
 yarn add vuepress-plugin-flowchart -D
 ```
 
+> Note that this plugin requires VuePress >= 1.0.0, for now you can try it via `yarn install vuepress@next -D`
+
 ## Usage
 
 ```js

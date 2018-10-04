@@ -1,7 +1,7 @@
 {
   "name": "vuepress-plugin-flowchart",
   "version": "1.4.0",
-  "description": "flowchart plugin for vuepress",
+  "description": "Rapid flowchart development plugin for vuepress",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs --temp .temp",

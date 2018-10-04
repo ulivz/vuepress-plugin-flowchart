@@ -1,7 +1,7 @@
 module.exports = {
   title: 'vuepress-plugin-flowchart',
 
-  description: "flowchart plugin for vuepress",
+  description: "Rapid flowchart development plugin for vuepress",
 
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
