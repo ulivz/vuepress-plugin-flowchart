@@ -1,6 +1,6 @@
 <template>
-  <svg class="" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-viewBox="0 0 30 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+  <svg xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+viewBox="0 0 30 30" style="enable-background:new 0 0 50 50;">
   <rect x="0" y="13" width="4" height="5" >
     <animate attributeName="height" attributeType="XML"
       values="5;21;5"
