@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img width="300px" src="https://github.com/ulivz/vuepress-plugin-flowchart/blob/master/docs/.vuepress/public/demo.gif?raw=true" alt="preview">
+  <img src="https://github.com/ulivz/vuepress-plugin-flowchart/blob/master/.media/preview.png?raw=true" alt="preview">
 </p>
 
 ## Features
