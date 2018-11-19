@@ -1,3 +1,13 @@
+<a name="1.4.3"></a>
+## [1.4.3](https://github.com/vuejs/vuepress/compare/v1.4.2...v1.4.3) (2018-11-19)
+
+
+### Bug Fixes
+
+* compatible with IE11 ([1fbdf67](https://github.com/vuejs/vuepress/commit/1fbdf67))
+
+
+
 <a name="1.4.2"></a>
 ## [1.4.2](https://github.com/vuejs/vuepress/compare/v1.4.1...v1.4.2) (2018-10-04)
 
