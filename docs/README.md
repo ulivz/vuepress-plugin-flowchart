@@ -21,11 +21,13 @@ para(path2, top)->op1
 
 ## Install
 
+::: warning Note 
+This plugin requires VuePress >= 1.0.0, for now you can try it via `yarn add vuepress@next -D`
+:::
+
 ```bash
 yarn add vuepress-plugin-flowchart -D
 ```
-
-> Note that this plugin requires VuePress >= 1.0.0, for now you can try it via `yarn add vuepress@next -D`
 
 ## Usage
 
