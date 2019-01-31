@@ -28,12 +28,9 @@
   },
   "homepage": "https://flowchart.vuepress.ulivz.com",
   "devDependencies": {
-    "vuepress": "^1.0.0-alpha.3",
-    "@vuepress/plugin-pwa": "^1.0.0-alpha.3",
+    "vuepress": "^1.0.0-alpha.35",
+    "@vuepress/plugin-pwa": "^1.0.0-alpha.35",
     "release-it": "v7.4.8",
     "conventional-changelog-cli": "^2.0.1"
-  },
-  "peerDependencies": {
-    "@vuepress/plugin-pwa": ">=1.0.0-alpha.3"
   }
 }
