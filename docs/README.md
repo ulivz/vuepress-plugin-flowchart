@@ -50,7 +50,7 @@ module.exports = {
 @flowend
 ```
 
-`vuepress-plugin-flowchart` leverages [flowchart.js](https://github.com/adrai/flowchart.js) under the hook.
+`vuepress-plugin-flowchart` leverages [flowchart.js](https://github.com/adrai/flowchart.js) under the hood.
 
 Available presets for now:
 
