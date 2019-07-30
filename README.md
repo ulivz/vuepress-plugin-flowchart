@@ -10,6 +10,8 @@
 
 ## Features
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ulivz/vuepress-plugin-flowchart.svg)](https://greenkeeper.io/)
+
 - Rapid flowchart development.
 - Content loading.
 - Out-of-the-box styling preset (Currently support `vue`、`ant`).
