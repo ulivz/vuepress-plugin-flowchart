@@ -61,8 +61,8 @@ View the current available preset [here](https://github.com/ulivz/vuepress-plugi
 
 ### Start & End
 
-- `[Variable]->start: [Text]`
-- `[Variable]->end: [Text]`
+- `[Variable]=>start: [Text]`
+- `[Variable]=>end: [Text]`
 
 ```markdown
 @flowstart
@@ -82,7 +82,7 @@ st->e
 
 ### Operation
 
-- `[Variable]->operation: [Text]`
+- `[Variable]=>operation: [Text]`
 
 ```markdown
 @flowstart
@@ -103,7 +103,7 @@ process->e
 
 ### Inputoutput
 
-- `[Variable]->inputoutput: [Text]`
+- `[Variable]=>inputoutput: [Text]`
 
 ```markdown
 @flowstart
@@ -124,7 +124,7 @@ process->e
 
 ### Subroutine
 
-- `[Variable]->subroutine: [Text]`
+- `[Variable]=>subroutine: [Text]`
 
 ```markdown
 @flowstart
@@ -145,7 +145,7 @@ process->e
 
 ### Condition
 
-- `[Variable]->condition: [Text]`
+- `[Variable]=>condition: [Text]`
 - `[Variable]([yesText])->[Position]`
 - `[Variable]([noText])->[Position]`
 
@@ -172,7 +172,7 @@ cond(no)->e
 
 ### Parallel
 
-- `[Variable]->parallel: [Text]`
+- `[Variable]=>parallel: [Text]`
 - `[Variable](path1, direction)->[Position]`
 - `[Variable](path1, direction)->[Position]`
 
