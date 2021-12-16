@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="{ 'loading': loading }"
+    :class="{ 'loading': loading, [preset]: preset }"
     class="vuepress-flowchart"
   >
     <Loading
@@ -38,7 +38,7 @@
 
   data () {
     return {
-      loading: true
+      loading: true,
     }
   },
 
@@ -82,9 +82,11 @@
   &.loading
     background-color #f3f6f8
 
-.operation-element, .parallel-element
-  rx 5px
-  ry 5px
+.vuepress-flowchart
+  &.vue
+    .start-element, .end-element, .operation-element, .parallel-element
+      rx 5px
+      ry 5px
 
 .vuepress-flowchart-loading-icon
   width 40px
