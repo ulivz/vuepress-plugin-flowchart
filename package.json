@@ -4,8 +4,8 @@
   "description": "Rapid flowchart development plugin for vuepress",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs --temp .temp",
-    "build": "vuepress build docs",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs --temp .temp",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs",
     "release": "release-it"
   },
   "repository": {
